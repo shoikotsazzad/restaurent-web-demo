@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturent Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- DaisyUI CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="navbar bg-transparent px-4 lg:px-8">
+            <div class="flex-1">
+                <a class="text-2xl font-serif text-white hover:text-amber-400 transition-colors">
+                    Culinary
+                    <span class="text-amber-400">Excellence</span>
+                </a>
+            </div>
+            
+            <div class="flex-none gap-4">
+                <!-- Navigation Links -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a class="text-white hover:text-amber-400 transition-colors">Home</a>
+                    <a class="text-white hover:text-amber-400 transition-colors">Menu</a>
+                    <a class="text-white hover:text-amber-400 transition-colors">About</a>
+                    <a class="text-white hover:text-amber-400 transition-colors">Contact</a>
+                </div>
+                
+                <!-- Book Table Button -->
+                <button class="hidden lg:block px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
+                    Book a Table
+                </button>
+                
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button class="btn btn-ghost text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+      <!-- Main -->
+      <main>
+        <!-- Hero Section -->
+        <!-- Hero Section -->
+<section class="hero-section">
+    <!-- Background Image Container -->
+    <div class="hero-background">
+        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3" 
+             alt="Elegant restaurant interior" 
+             class="hero-image">
+    </div>
+    
+    <!-- Gradient Overlay -->
+    <div class="hero-overlay"></div>
+    
+    <!-- Content -->
+    <div class="hero-content">
+        <div class="hero-text-container">
+            <h2 class="hero-subtitle">Welcome to</h2>
+            <h1 class="hero-title">
+                <span class="hero-title-main">Culinary</span>
+                <span class="hero-title-accent">Excellence</span>
+            </h1>
+            <p class="hero-description">
+                Indulge in exquisite flavors and exceptional service in an atmosphere 
+                where every dish tells a story and every moment creates a memory.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-reserve">Reserve a Table</button>
+                <button class="btn-menu">View Menu</button>
+            </div>
+        </div>
+        
+        <!-- Info Cards -->
+        <div class="info-cards">
+            <div class="info-card">
+                <h3>Opening Hours</h3>
+                <p>Mon - Sun: 11:00 - 23:00</p>
+            </div>
+            <div class="info-card">
+                <h3>Location</h3>
+                <p>123 Gourmet Street, Cuisine City</p>
+            </div>
+            <div class="info-card">
+                <h3>Contact</h3>
+                <p>+1 (555) 123-4567</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Featured Dishes -->
+        <section class="py-24 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <!-- Section Header -->
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-amber-400 font-serif text-lg">Our Specialties</span>
+                    <h2 class="text-4xl font-serif font-bold mt-2 mb-4">Featured Dishes</h2>
+                    <div class="w-24 h-1 bg-amber-400 mx-auto mb-4"></div>
+                    <p class="text-gray-600">Discover our chef's carefully curated selection of extraordinary dishes</p>
+                </div>
+        
+                <!-- Dishes Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Dish 1 -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1485921325833-c519f76c4927" 
+                                 alt="Grilled Salmon" 
+                                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-serif font-bold mb-2">Grilled Salmon</h3>
+                                    <p class="text-gray-600 text-sm mb-2">Fresh Atlantic salmon with herbs and lemon butter sauce</p>
+                                </div>
+                                <span class="text-2xl font-serif text-amber-400">$29.99</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-amber-400">★★★★★</span>
+                                    <span class="text-sm text-gray-500">(124 reviews)</span>
+                                </div>
+                                <button class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-amber-400 text-black px-3 py-1 rounded-full text-sm font-semibold">
+                            Chef's Choice
+                        </div>
+                    </div>
+        
+                    <!-- Dish 2 -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1558030006-450675393462" 
+                                 alt="Beef Tenderloin" 
+                                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-serif font-bold mb-2">Beef Tenderloin</h3>
+                                    <p class="text-gray-600 text-sm mb-2">Premium cut beef with roasted vegetables and red wine reduction</p>
+                                </div>
+                                <span class="text-2xl font-serif text-amber-400">$34.99</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-amber-400">★★★★★</span>
+                                    <span class="text-sm text-gray-500">(98 reviews)</span>
+                                </div>
+                                <button class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Popular
+                        </div>
+                    </div>
+        
+                    <!-- Dish 3 -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601" 
+                                 alt="Truffle Pasta" 
+                                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-serif font-bold mb-2">Truffle Pasta</h3>
+                                    <p class="text-gray-600 text-sm mb-2">Homemade pasta with black truffle and parmesan cream sauce</p>
+                                </div>
+                                <span class="text-2xl font-serif text-amber-400">$26.99</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-amber-400">★★★★★</span>
+                                    <span class="text-sm text-gray-500">(156 reviews)</span>
+                                </div>
+                                <button class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Vegetarian
+                        </div>
+                    </div>
+        
+                    <!-- Dish 4 -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" 
+                                 alt="Mediterranean Sea Bass" 
+                                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-serif font-bold mb-2">Mediterranean Sea Bass</h3>
+                                    <p class="text-gray-600 text-sm mb-2">Grilled sea bass with Mediterranean herbs and olive tapenade</p>
+                                </div>
+                                <span class="text-2xl font-serif text-amber-400">$32.99</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-amber-400">★★★★★</span>
+                                    <span class="text-sm text-gray-500">(87 reviews)</span>
+                                </div>
+                                <button class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Fresh Catch
+                        </div>
+                    </div>
+        
+                    <!-- Dish 5 -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1547496502-affa22d38842" 
+                                 alt="Quinoa Buddha Bowl" 
+                                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-serif font-bold mb-2">Quinoa Buddha Bowl</h3>
+                                    <p class="text-gray-600 text-sm mb-2">Fresh vegetables, quinoa, avocado with tahini dressing</p>
+                                </div>
+                                <span class="text-2xl font-serif text-amber-400">$19.99</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-amber-400">★★★★★</span>
+                                    <span class="text-sm text-gray-500">(92 reviews)</span>
+                                </div>
+                                <button class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Vegan
+                        </div>
+                    </div>
+        
+                    <!-- Dish 6 -->
+                    <div class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0" 
+                                 alt="Duck Confit" 
+                                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-serif font-bold mb-2">Duck Confit</h3>
+                                    <p class="text-gray-600 text-sm mb-2">Classic French duck confit with roasted potatoes and cherry sauce</p>
+                                </div>
+                                <span class="text-2xl font-serif text-amber-400">$36.99</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-amber-400">★★★★★</span>
+                                    <span class="text-sm text-gray-500">(76 reviews)</span>
+                                </div>
+                                <button class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Seasonal
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- View Full Menu Button -->
+                <div class="text-center mt-16">
+                    <button class="inline-flex items-center gap-2 px-8 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors">
+                        View Full Menu
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book a Table Section -->
+        <section id="book-a-table" class="booking-section">
+            <div class="booking-container">
+                <h2>Book a Table</h2>
+                <p>Reserve your table now for an unforgettable dining experience.</p>
+                <form action="#" method="post" class="booking-form">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                    
+                    <button type="submit">Reserve Now</button>
+                </form>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <!-- JS added -->
+     <script src="script.js"></script>
+    
+</body>
+</html>
