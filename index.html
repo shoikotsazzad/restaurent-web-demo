@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +12,18 @@
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <!-- Header -->
     <header class="fixed w-full z-50 transition-all duration-300" id="navbar">
         <div class="navbar bg-transparent px-4 lg:px-8">
             <div class="flex-1">
                 <a class="text-2xl font-serif text-white hover:text-amber-400 transition-colors">
-                    Culinary
-                    <span class="text-amber-400">Excellence</span>
+                    Bhojon
+                    <span class="text-amber-400">Bilash</span>
                 </a>
             </div>
-            
+
             <div class="flex-none gap-4">
                 <!-- Navigation Links -->
                 <div class="hidden lg:flex items-center gap-8">
@@ -30,73 +32,74 @@
                     <a class="text-white hover:text-amber-400 transition-colors">About</a>
                     <a class="text-white hover:text-amber-400 transition-colors">Contact</a>
                 </div>
-                
+
                 <!-- Book Table Button -->
-                <button class="hidden lg:block px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
+                <button
+                    class="hidden lg:block px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
                     Book a Table
                 </button>
-                
+
                 <!-- Mobile Menu Button -->
                 <div class="lg:hidden">
                     <button class="btn btn-ghost text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
             </div>
         </div>
     </header>
-      <!-- Main -->
-      <main>
+    <!-- Main -->
+    <main>
         <!-- Hero Section -->
-        <!-- Hero Section -->
-<section class="hero-section">
-    <!-- Background Image Container -->
-    <div class="hero-background">
-        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3" 
-             alt="Elegant restaurant interior" 
-             class="hero-image">
-    </div>
-    
-    <!-- Gradient Overlay -->
-    <div class="hero-overlay"></div>
-    
-    <!-- Content -->
-    <div class="hero-content">
-        <div class="hero-text-container">
-            <h2 class="hero-subtitle">Welcome to</h2>
-            <h1 class="hero-title">
-                <span class="hero-title-main">Culinary</span>
-                <span class="hero-title-accent">Excellence</span>
-            </h1>
-            <p class="hero-description">
-                Indulge in exquisite flavors and exceptional service in an atmosphere 
-                where every dish tells a story and every moment creates a memory.
-            </p>
-            <div class="hero-buttons">
-                <button class="btn-reserve">Reserve a Table</button>
-                <button class="btn-menu">View Menu</button>
+        <section class="hero-section">
+            <!-- Background Image Container -->
+            <div class="hero-background">
+                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3"
+                    alt="Elegant restaurant interior" class="hero-image">
             </div>
-        </div>
-        
-        <!-- Info Cards -->
-        <div class="info-cards">
-            <div class="info-card">
-                <h3>Opening Hours</h3>
-                <p>Mon - Sun: 11:00 - 23:00</p>
+
+            <!-- Gradient Overlay -->
+            <div class="hero-overlay"></div>
+
+            <!-- Content -->
+            <div class="hero-content text-ellipsis">
+                <div class="hero-text-container">
+                    <h2 class="hero-subtitle">Welcome to</h2>
+                    <h1 class="hero-title">
+                        <span class="hero-title-main"> Bhojon</span>
+                        <span class="hero-title-accent"> Bilash</span>
+                    </h1>
+                    <p class="hero-description">
+                        Enjoy delicious food and great service in a place <br> where every meal is special and every moment is unforgettable.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-reserve">Reserve a Table</button>
+                        <button class="btn-menu">View Menu</button>
+                    </div>
+                </div>
+
+                <!-- Info Cards -->
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h3>Opening Hours</h3>
+                        <p>Sat - Fri: 2:00 PM - 11:00 PM</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Location</h3>
+                        <p>DC Bridge, Madaripur</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Contact</h3>
+                        <p>01700000000</p>
+                    </div>
+                </div>
             </div>
-            <div class="info-card">
-                <h3>Location</h3>
-                <p>123 Gourmet Street, Cuisine City</p>
-            </div>
-            <div class="info-card">
-                <h3>Contact</h3>
-                <p>+1 (555) 123-4567</p>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
+
         <!-- Featured Dishes -->
         <section class="py-24 bg-slate-50">
             <div class="container mx-auto px-6">
@@ -107,202 +110,232 @@
                     <div class="w-24 h-1 bg-amber-400 mx-auto mb-4"></div>
                     <p class="text-gray-600">Discover our chef's carefully curated selection of extraordinary dishes</p>
                 </div>
-        
+
                 <!-- Dishes Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                     <!-- Dish 1 -->
-                    <div class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div
+                        class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                         <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1485921325833-c519f76c4927" 
-                                 alt="Grilled Salmon" 
-                                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="images/burger.jpg" alt="Grilled Salmon"
+                                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-start mb-4">
                                 <div>
-                                    <h3 class="text-xl font-serif font-bold mb-2">Grilled Salmon</h3>
-                                    <p class="text-gray-600 text-sm mb-2">Fresh Atlantic salmon with herbs and lemon butter sauce</p>
+                                    <h3 class="text-xl font-serif font-bold mb-2">Cheese Burger</h3>
+                                    <p class="text-gray-600 text-sm mb-2">Juicy beef patty with melted cheese, crisp lettuce, and signature sauce.</p>
                                 </div>
-                                <span class="text-2xl font-serif text-amber-400">$29.99</span>
+                                <span class="text-2xl font-serif text-amber-400">300 BDT</span>
                             </div>
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-2">
                                     <span class="text-amber-400">★★★★★</span>
                                     <span class="text-sm text-gray-500">(124 reviews)</span>
                                 </div>
-                                <button class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
+                                <button
+                                    class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
                                     Order Now
                                 </button>
                             </div>
                         </div>
-                        <div class="absolute top-4 right-4 bg-amber-400 text-black px-3 py-1 rounded-full text-sm font-semibold">
+                        <div
+                            class="absolute top-4 right-4 bg-amber-400 text-black px-3 py-1 rounded-full text-sm font-semibold">
                             Chef's Choice
                         </div>
                     </div>
-        
+
                     <!-- Dish 2 -->
-                    <div class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div
+                        class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                         <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1558030006-450675393462" 
-                                 alt="Beef Tenderloin" 
-                                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="images/frenchfries.jpg" alt="Beef Tenderloin"
+                                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-start mb-4">
                                 <div>
-                                    <h3 class="text-xl font-serif font-bold mb-2">Beef Tenderloin</h3>
-                                    <p class="text-gray-600 text-sm mb-2">Premium cut beef with roasted vegetables and red wine reduction</p>
+                                    <h3 class="text-xl font-serif font-bold mb-2">French Fries</h3>
+                                    <p class="text-gray-600 text-sm mb-2">Crispy golden fries, lightly salted and served with tangy ketchup</p>
                                 </div>
-                                <span class="text-2xl font-serif text-amber-400">$34.99</span>
+                                <span class="text-2xl font-serif text-amber-400">220 BDT</span>
                             </div>
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-2">
                                     <span class="text-amber-400">★★★★★</span>
                                     <span class="text-sm text-gray-500">(98 reviews)</span>
                                 </div>
-                                <button class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
+                                <button
+                                    class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
                                     Order Now
                                 </button>
                             </div>
                         </div>
-                        <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                        <div
+                            class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                             Popular
                         </div>
                     </div>
-        
+
                     <!-- Dish 3 -->
-                    <div class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div
+                        class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                         <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601" 
-                                 alt="Truffle Pasta" 
-                                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="images/wing.jpg" alt="Truffle Pasta"
+                                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-start mb-4">
                                 <div>
-                                    <h3 class="text-xl font-serif font-bold mb-2">Truffle Pasta</h3>
-                                    <p class="text-gray-600 text-sm mb-2">Homemade pasta with black truffle and parmesan cream sauce</p>
+                                    <h3 class="text-xl font-serif font-bold mb-2">Chicken Wings </h3>
+                                    <p class="text-gray-600 text-sm mb-2">Spicy, crispy wings tossed in flavorful sauce, served with a cooling dip.</p>
                                 </div>
-                                <span class="text-2xl font-serif text-amber-400">$26.99</span>
+                                <span class="text-2xl font-serif text-amber-400">289 BDT</span>
                             </div>
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-2">
                                     <span class="text-amber-400">★★★★★</span>
                                     <span class="text-sm text-gray-500">(156 reviews)</span>
                                 </div>
-                                <button class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
+                                <button
+                                    class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
                                     Order Now
                                 </button>
                             </div>
                         </div>
-                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                            Vegetarian
+                        <div
+                            class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Classic
                         </div>
                     </div>
-        
+
                     <!-- Dish 4 -->
-                    <div class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div
+                        class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                         <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" 
-                                 alt="Mediterranean Sea Bass" 
-                                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="images/fish.jpg"
+                                alt="Mediterranean Sea Bass"
+                                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-start mb-4">
                                 <div>
-                                    <h3 class="text-xl font-serif font-bold mb-2">Mediterranean Sea Bass</h3>
-                                    <p class="text-gray-600 text-sm mb-2">Grilled sea bass with Mediterranean herbs and olive tapenade</p>
+                                    <h3 class="text-xl font-serif font-bold mb-2">Fish Curry</h3>
+                                    <p class="text-gray-600 text-sm mb-2">Tender fish fillet simmered in a rich, aromatic spiced coconut gravy.</p>
                                 </div>
-                                <span class="text-2xl font-serif text-amber-400">$32.99</span>
+                                <span class="text-2xl font-serif text-amber-400">199 BDT</span>
                             </div>
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-2">
                                     <span class="text-amber-400">★★★★★</span>
                                     <span class="text-sm text-gray-500">(87 reviews)</span>
                                 </div>
-                                <button class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
+                                <button
+                                    class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
                                     Order Now
                                 </button>
                             </div>
                         </div>
-                        <div class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                            Fresh Catch
+                        <div
+                            class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Fish Items
                         </div>
                     </div>
-        
+
                     <!-- Dish 5 -->
-                    <div class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div
+                        class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                         <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1547496502-affa22d38842" 
-                                 alt="Quinoa Buddha Bowl" 
-                                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="images/platter.jpg"
+                                alt="Quinoa Buddha Bowl"
+                                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-start mb-4">
                                 <div>
-                                    <h3 class="text-xl font-serif font-bold mb-2">Quinoa Buddha Bowl</h3>
-                                    <p class="text-gray-600 text-sm mb-2">Fresh vegetables, quinoa, avocado with tahini dressing</p>
+                                    <h3 class="text-xl font-serif font-bold mb-2">Fried Rice</h3>
+                                    <p class="text-gray-600 text-sm mb-2">Fragrant wok-fried rice with fresh veggies, egg, and savory soy seasoning.
+                                    </p>
                                 </div>
-                                <span class="text-2xl font-serif text-amber-400">$19.99</span>
+                                <span class="text-2xl font-serif text-amber-400">449 BDT</span>
                             </div>
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-2">
                                     <span class="text-amber-400">★★★★★</span>
                                     <span class="text-sm text-gray-500">(92 reviews)</span>
                                 </div>
-                                <button class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
+                                <button
+                                    class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
                                     Order Now
                                 </button>
                             </div>
                         </div>
-                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                            Vegan
+                        <div
+                            class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Signature Bites
                         </div>
                     </div>
-        
+
                     <!-- Dish 6 -->
-                    <div class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div
+                        class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                         <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0" 
-                                 alt="Duck Confit" 
-                                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img src="images/Milkshake1.jpg" alt="Duck Confit"
+                                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
                         </div>
                         <div class="p-6 bg-white">
                             <div class="flex justify-between items-start mb-4">
                                 <div>
-                                    <h3 class="text-xl font-serif font-bold mb-2">Duck Confit</h3>
-                                    <p class="text-gray-600 text-sm mb-2">Classic French duck confit with roasted potatoes and cherry sauce</p>
+                                    <h3 class="text-xl font-serif font-bold mb-2">Milk Shake</h3>
+                                    <p class="text-gray-600 text-sm mb-2">Creamy, rich milkshake blended with fresh flavors and topped with whipped cream.</p>
                                 </div>
-                                <span class="text-2xl font-serif text-amber-400">$36.99</span>
+                                <span class="text-2xl font-serif text-amber-400">220 BDT</span>
                             </div>
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-2">
                                     <span class="text-amber-400">★★★★★</span>
                                     <span class="text-sm text-gray-500">(76 reviews)</span>
                                 </div>
-                                <button class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
+                                <button
+                                    class="px-4 py-2 bg-amber-400 text-black rounded hover:bg-amber-500 transition-colors">
                                     Order Now
                                 </button>
                             </div>
                         </div>
-                        <div class="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                            Seasonal
+                        <div
+                            class="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Healthy Choices
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- View Full Menu Button -->
                 <div class="text-center mt-16">
-                    <button class="inline-flex items-center gap-2 px-8 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors">
+                    <button
+                        class="inline-flex items-center gap-2 px-8 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors">
                         View Full Menu
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
                         </svg>
                     </button>
                 </div>
@@ -310,36 +343,390 @@
         </section>
 
         <!-- Book a Table Section -->
-        <section id="book-a-table" class="booking-section">
-            <div class="booking-container">
-                <h2>Book a Table</h2>
-                <p>Reserve your table now for an unforgettable dining experience.</p>
-                <form action="#" method="post" class="booking-form">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="date">Date:</label>
-                    <input type="date" id="date" name="date" required>
-                    
-                    <label for="time">Time:</label>
-                    <input type="time" id="time" name="time" required>
-                    
-                    <label for="guests">Number of Guests:</label>
-                    <input type="number" id="guests" name="guests" min="1" required>
-                    
-                    <button type="submit">Reserve Now</button>
-                </form>
+        <section class="py-24 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <!-- Section Header -->
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-amber-400 font-serif text-lg">Reserve Your Table</span>
+                    <h2 class="text-4xl font-serif font-bold mt-2 mb-4">Book a Table</h2>
+                    <div class="w-24 h-1 bg-amber-400 mx-auto mb-4"></div>
+                    <p class="text-gray-600">Experience exceptional dining with personalized service</p>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="max-w-3xl mx-auto">
+                    <form class="bg-white rounded-lg shadow-xl p-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Date & Time -->
+                            <div>
+                                <label class="block text-sm font-serif text-gray-700 mb-2">Date</label>
+                                <input type="date"
+                                    class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400"
+                                    required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-serif text-gray-700 mb-2">Time</label>
+                                <select
+                                    class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400"
+                                    required>
+                                    <option value="">Select time</option>
+                                    <option>12:00 PM</option>
+                                    <option>12:30 PM</option>
+                                    <option>1:00 PM</option>
+                                    <option>7:00 PM</option>
+                                    <option>7:30 PM</option>
+                                    <option>8:00 PM</option>
+                                </select>
+                            </div>
+
+                            <!-- Guest Details -->
+                            <div>
+                                <label class="block text-sm font-serif text-gray-700 mb-2">Number of Guests</label>
+                                <select
+                                    class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400"
+                                    required>
+                                    <option>2 Guests</option>
+                                    <option>3 Guests</option>
+                                    <option>4 Guests</option>
+                                    <option>5+ Guests</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-serif text-gray-700 mb-2">Full Name</label>
+                                <input type="text"
+                                    class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400"
+                                    required>
+                            </div>
+
+                            <!-- Contact -->
+                            <div>
+                                <label class="block text-sm font-serif text-gray-700 mb-2">Email</label>
+                                <input type="email"
+                                    class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400"
+                                    required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-serif text-gray-700 mb-2">Phone</label>
+                                <input type="tel"
+                                    class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400"
+                                    required>
+                            </div>
+                        </div>
+
+                        <!-- Special Requests -->
+                        <div class="mt-6">
+                            <label class="block text-sm font-serif text-gray-700 mb-2">Special Requests</label>
+                            <textarea
+                                class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-amber-400 h-24"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center mt-8">
+                            <button type="submit"
+                                class="inline-flex items-center gap-2 px-8 py-3 bg-amber-400 text-black rounded-lg hover:bg-amber-500 transition-colors font-serif">
+                                Reserve Now
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
 
+        <!-- Meet the Chefs Section -->
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <!-- Section Header -->
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-amber-400 font-serif text-lg">Culinary Excellence</span>
+                    <h2 class="text-4xl font-serif font-bold mt-2 mb-4">Meet Our Chefs</h2>
+                    <div class="w-24 h-1 bg-amber-400 mx-auto mb-4"></div>
+                    <p class="text-gray-600">The creative minds behind our exceptional cuisine</p>
+                </div>
+
+                <!-- Chefs Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                    <!-- Head Chef -->
+                    <div
+                        class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative">
+                            <img src="images/eiliv-aceron-wNQoaYCFcsI-unsplash.jpg" alt="Executive Chef"
+                                class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <h3 class="text-xl font-serif font-bold mb-2">Chef Michael Roberts</h3>
+                            <p class="text-amber-400 font-serif mb-3">Executive Chef</p>
+                            <p class="text-gray-600 text-sm">With over 20 years of experience in fine dining, Chef
+                                Michael brings his passion for innovative cuisine and seasonal ingredients to every
+                                dish.</p>
+                            <div class="flex gap-4 mt-4">
+                                <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 bg-amber-400 text-black px-3 py-1 rounded-full text-sm font-semibold">
+                            Executive Chef
+                        </div>
+                    </div>
+
+                    <!-- Sous Chef -->
+                    <div
+                        class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative">
+                            <img src="images/louis-hansel-v3OlBE6-fhU-unsplash.jpg" alt="Sous Chef"
+                                class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <h3 class="text-xl font-serif font-bold mb-2">Chef Henry Nicolas</h3>
+                            <p class="text-amber-400 font-serif mb-3">Sous Chef</p>
+                            <p class="text-gray-600 text-sm">Specializing in fusion cuisine, Chef Sarah brings her
+                                unique perspective and creative flair to our kitchen.</p>
+                            <div class="flex gap-4 mt-4">
+                                <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 bg-amber-400 text-black px-3 py-1 rounded-full text-sm font-semibold">
+                            Sous Chef
+                        </div>
+                    </div>
+                    <!-- Pastry Chef -->
+                    <div
+                        class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative">
+                            <img src="images/john-fornander-jJIb2e7Jkcs-unsplash.jpg" alt="Sous Chef"
+                                class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <h3 class="text-xl font-serif font-bold mb-2">Chef Sarah Chen</h3>
+                            <p class="text-amber-400 font-serif mb-3">Pastry Chef</p>
+                            <p class="text-gray-600 text-sm">Specializing in fusion cuisine, Chef Sarah brings her
+                                unique perspective and creative flair to our kitchen.</p>
+                            <div class="flex gap-4 mt-4">
+                                <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 bg-amber-400 text-black px-3 py-1 rounded-full text-sm font-semibold">
+                            Pastry Chef
+                        </div>
+                    </div>
+                    <!-- Pastry Chef -->
+                    <div
+                        class="group relative overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative">
+                            <img src="images/Chef Nayeem Ashraf.jpg" alt="Pastry Chef"
+                                class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 bg-white">
+                            <h3 class="text-xl font-serif font-bold mb-2">Chef Nayeem Ashraf</h3>
+                            <p class="text-amber-400 font-serif mb-3">Fish Chef</p>
+                            <p class="text-gray-600 text-sm">Master of delicate pastries and intricate desserts, Chef
+                                Antonio crafts sweet creations that delight the senses.</p>
+                            <div class="flex gap-4 mt-4">
+                                <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 bg-amber-400 text-black px-3 py-1 rounded-full text-sm font-semibold">
+                            Fish Chef
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Goals and History Section -->
+        <section class="py-24 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <!-- Section Header -->
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-amber-400 font-serif text-lg">Our Legacy</span>
+                    <h2 class="text-4xl font-serif font-bold mt-2 mb-4">Our Goals and History</h2>
+                    <div class="w-24 h-1 bg-amber-400 mx-auto mb-4"></div>
+                    <p class="text-gray-600">A journey of culinary excellence since 1995</p>
+                </div>
         
+                <!-- Content Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Image Side -->
+                    <div class="relative">
+                        <div class="relative aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
+                            <img src="images/r2.jpg" alt="Restaurant History" class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/20"></div>
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 bg-amber-400 text-black p-4 rounded-lg shadow-lg">
+                            <p class="font-serif text-3xl font-bold">10+</p>
+                            <p class="text-sm">Years of Excellence</p>
+                        </div>
+                    </div>
+        
+                    <!-- Text Content -->
+                    <div class="space-y-6">
+                        <div class="bg-white p-8 rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-serif font-bold mb-4">Our Story</h3>
+                            <p class="text-gray-600 mb-6">Founded in 1995, our restaurant began as a small family bistro with a passion for authentic flavors and exceptional service. Today, we've grown into a culinary destination while maintaining our commitment to quality and tradition.</p>
+                            
+                            <h3 class="text-2xl font-serif font-bold mb-4">Our Goals</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <span class="text-amber-400 mt-1">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </span>
+                                    <p class="text-gray-600">Deliver exceptional culinary experiences using locally-sourced ingredients</p>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span class="text-amber-400 mt-1">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </span>
+                                    <p class="text-gray-600">Maintain sustainable practices while supporting local farmers</p>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span class="text-amber-400 mt-1">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </span>
+                                    <p class="text-gray-600">Create an inviting atmosphere where memories are made</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <!-- JS added -->
-     <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <!-- Main Footer -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 py-16">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-serif text-amber-400 mb-4">Bhojon Bilash</h3>
+                    <p class="text-gray-400 text-sm">Experience exceptional dining in the heart of the city. Crafting memorable moments through culinary excellence.</p>
+                </div>
     
+                <!-- Hours -->
+                <div>
+                    <h3 class="text-xl font-serif text-amber-400 mb-4">Hours</h3>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>Monday - Friday: 11am - 10pm</li>
+                        <li>Saturday: 10am - 11pm</li>
+                        <li>Sunday: 10am - 9pm</li>
+                    </ul>
+                </div>
+    
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-xl font-serif text-amber-400 mb-4">Contact</h3>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>DC Bridge, Madaripur</li>               
+                        <li>Phone: 0170000000</li>
+                        <li>Email: bhojonbilash@restaurant.com</li>
+                    </ul>
+                </div>
+    
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-xl font-serif text-amber-400 mb-4">Newsletter</h3>
+                    <form class="space-y-3">
+                        <input type="email" placeholder="Your email" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-amber-400 text-sm">
+                        <button class="w-full px-4 py-2 bg-amber-400 text-black rounded-lg hover:bg-amber-500 transition-colors text-sm">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+    
+            <!-- Social Links -->
+            <div class="flex justify-center gap-6 py-6 border-t border-gray-800">
+                <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+                </a>
+            </div>
+    
+            <!-- Copyright -->
+            <div class="text-center py-6 border-t border-gray-800">
+                <p class="text-gray-400 text-sm">&copy; 2025 Restaurant Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS added -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
